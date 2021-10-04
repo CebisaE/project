@@ -16,12 +16,10 @@ ul {
     background-color:green;
 }
 /* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
-li {
-    /* The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. */
-    float: left;
-}
 /* The <a> tag defines a hyperlink, which is used to link from one page to another. */
 li a {
+    /* The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. */
+    float: left;
     /* The display property specifies the display behavior (the type of rendering box) of an element. */
     display: block;
     
@@ -53,12 +51,25 @@ li a .active {
     background-color: #666;
 }
 body {
-   background-image: url("EC TECHNOLOGIES.png"), url("EC TECHNOLOGIES");
-    background-color: #cccccc;
+   background-image: url("back.jpeg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 h1 {
-    text-align: left;
+    text-align:center;
     color: black;
+}
+fieldset {
+    float:center;
+}
+.card {
+     border-style: unset;
+    border-radius: 50px;
+    border-width: 5px 20px;
+padding-bottom: 175px;
+padding-left: 75px;
+text-align: center;
 }
