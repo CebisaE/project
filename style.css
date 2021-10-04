@@ -2,7 +2,7 @@
 ul {
     /* Remove list bullets */
     list-style-type: none;
-    
+
     /* The CSS margin properties are used to create space around elements, outside of any defined borders */
     margin: 0;
     
@@ -59,6 +59,6 @@ body {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     color: black;
 }
