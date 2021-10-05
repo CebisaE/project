@@ -24,7 +24,7 @@ li a {
     display: block;
     
     /*  */
-    color: white;
+    color:black;
     
     /* The text-align property specifies the horizontal alignment of text in an element. */
     text-align: center;
@@ -43,7 +43,7 @@ li a {
 /* The :hover selector is used to select elements when you mouse over them. */
 li a:hover {
     /*  */
-    background-color: #333;
+    background-color: white;
 }
 
 li a .active {
