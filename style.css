@@ -13,7 +13,7 @@ ul {
     overflow: hidden;
     
     /*  */
-    background-color:green;
+    background-color:black;
 }
 /* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
 /* The <a> tag defines a hyperlink, which is used to link from one page to another. */
@@ -24,7 +24,7 @@ li a {
     display: block;
     
     /*  */
-    color:black;
+    color:white;
     
     /* The text-align property specifies the horizontal alignment of text in an element. */
     text-align: center;
@@ -43,7 +43,7 @@ li a {
 /* The :hover selector is used to select elements when you mouse over them. */
 li a:hover {
     /*  */
-    background-color: white;
+    background-color:black;
 }
 
 li a .active {
@@ -52,7 +52,7 @@ li a .active {
 }
 /* testimonial page */
 body {
-   background-image: url("back.jpeg");
+   background-image: url("old-brick-black-color-wall-260nw-1605128917.webp");
   
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,24 +61,24 @@ body {
 
 h1 {
     text-align:center;
-    color: black;
+    color:white;
 }
 fieldset {
     float:center;
 }
-.card {
-     border-style: unset;
-    border-radius: 50px;
-    border-width: 5px 20px;
-padding-bottom: 175px;
-padding-left: 75px;
-text-align: center;
-}
-dy {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
-  }
-  
+/* .card { */
+     /* border-style: unset; */
+    /* border-radius: 50px;
+    border-width: 5px 20px; */
+/* padding-bottom: 175px; */
+/* padding-left: 75px; */
+/* text-align: center; */
+/* } */
+/* dy { */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* background-image: url(pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg); */
+  /* } */
+
   .flip-card {
     background-color: transparent;
     width: 300px;
@@ -112,7 +112,7 @@ dy {
   
   .flip-card-front {
     background-color: #bbb;
-    color: black;
+    color:white;
     border-radius: 100px;
   }
   
@@ -136,7 +136,29 @@ h1{
     color:white
 }
 p{
-    color: black;
+    color: white;
     font-size:20px;
 }
+ol{
+  text-align:center
+}
+.card{
+  color:white
+}
+fieldset{
+  border-radius: 100px;
+  width: 50px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
 
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
