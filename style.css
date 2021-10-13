@@ -24,7 +24,7 @@ li a {
     display: block;
     
     /*  */
-    color:white;
+    color:yellow;
     
     /* The text-align property specifies the horizontal alignment of text in an element. */
     text-align: center;
@@ -61,7 +61,7 @@ body {
 
 h1 {
     text-align:center;
-    color:white;
+    color:yellow;
 }
 fieldset {
     float:center;
@@ -112,7 +112,7 @@ fieldset {
   
   .flip-card-front {
     background-color: #bbb;
-    color:white;
+    color:yellow;
     border-radius: 100px;
   }
   
@@ -133,10 +133,11 @@ img{
     border-radius: 50px;
 }
 h1{
-    color:white
+    color:yellow
+  
 }
 p{
-    color: white;
+    color:yellow;
     font-size:20px;
 }
 ol{
@@ -146,19 +147,69 @@ ol{
   color:white
 }
 fieldset{
-  border-radius: 100px;
-  width: 50px;
+  
+  width: 60px;
 }
 .fa-facebook {
   background: #3B5998;
   color: white;
+  padding: 30px;
 }
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
+  padding: 30px;
+}
+.fa- {
+  background: green;
+  color: white;
+  padding: 30px;
 }
 .fa-instagram {
-  background: #125688;
+  background: purple;
   color: white;
+  padding: 30px;
+}
+.fa-google {
+  background: red;
+  color: white;
+  padding: 30px;
+}
+body {
+  background-image: url(old-brick-black-color-wall-260nw-1605128917.webp);
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-image: url(old-brick-black-color-wall-260nw-1605128917.webp);
+  }
+}
+.paragraph {
+  float: left;
+  text-align: center;
+}
+.img {
+  float: left;
+}
+.typewriter h1 {
+  color:yellow;
+  font-family: monospace;
+  overflow: hidden; 
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s  infinite;
+    padding-top: 50px;
+  
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
