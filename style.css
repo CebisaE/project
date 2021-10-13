@@ -190,9 +190,9 @@ body {
   text-align: center;
 }
 .img {
-  float: left;
+  float: center;
 }
-.typewriter h1 {
+.typewriter h1,h2 {
   color:yellow;
   font-family: monospace;
   overflow: hidden; 
@@ -213,3 +213,100 @@ body {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
+body {
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  color:yellow;
+}
+
+.muzieknootjes {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5,
+.noot-6,
+.noot-7 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30px;
+  bottom: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  bottom: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  bottom:40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+.noot-5 {
+  top: 50px;
+  bottom: 50px;
+  left: 60%;
+  animation-delay:2.5s
+}
+.noot-6 {
+  top: 50px;
+  bottom: 50px;
+  left: 60%;
+  animation-delay:3s
+}
+.noot-7 {
+  top: 50px;
+  bottom: 50px;
+  left: 60%;
+  animation-delay:3.5s
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
