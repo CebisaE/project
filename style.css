@@ -1,58 +1,184 @@
-/* The <ul> tag defines an unordered (bulleted) list */
-ul {
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/* ul { */
     /* Remove list bullets */
-    list-style-type: none;
+    /* list-style-type: none; */
 
     /* The CSS margin properties are used to create space around elements, outside of any defined borders */
-    margin: 0;
+    /* margin: 0; */
     
     /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
-    padding: 20px;
+    /* padding: 20px; */
     
     /* The overflow property specifies what should happen if content overflows an element's box. */
-    overflow: hidden;
+    /* overflow: hidden; */
     
     /*  */
-    background-color:black;
-}
+    /* background-color:black; */
+/* } */
 /* The <li> tag is used inside ordered lists(<ol>), unordered lists (<ul>), and in menu lists (<menu>). */
 /* The <a> tag defines a hyperlink, which is used to link from one page to another. */
-li a {
+/* li a { */
     /* The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. */
-    float: left;
+    /* float: left; */
     /* The display property specifies the display behavior (the type of rendering box) of an element. */
-    display: block;
+    /* display: block; */
     
     /*  */
-    color:yellow;
+    /* color:yellow; */
     
     /* The text-align property specifies the horizontal alignment of text in an element. */
-    text-align: center;
+    /* text-align: center; */
     
     /* The CSS padding properties are used to generate space around an element's content, inside of any defined borders. */
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     
     /* The text-decoration property specifies the decoration added to text */
-    text-decoration: none;
+    /* text-decoration: none; */
     
-    font-weight: bolder;
+    /* font-weight: bolder; */
 
-    margin-top: -19px;
-    margin-bottom: -19px;
-}
+    /* margin-top: -19px; */
+    /* margin-bottom: -19px; */
+/* } */
 /* The :hover selector is used to select elements when you mouse over them. */
-li a:hover {
+/* li a:hover { */
     /*  */
-    background-color:black;
-}
+    /* background-color:black; */
+/* } */
 
-li a .active {
+/* li a .active { */
     /*  */
-    background-color: #666;
-}
+    /* background-color: #666; */
+/* } */
 /* testimonial page */
 body {
-   background-image: url("old-brick-black-color-wall-260nw-1605128917.webp");
+   background-image: url("images/old-brick-black-color-wall-260nw-1605128917.webp");
   
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +243,7 @@ fieldset {
   }
   
   .flip-card-back {
-    background-image: url(milky-way-2695569__480.jpg);
+    background-image: url(images/milky-way-2695569__480.jpg);
     transform: rotateY(180deg);
     border-radius: 50px;
   }
@@ -178,12 +304,12 @@ fieldset{
 }
 /* media query code  */
 body {
-  background-image: url(old-brick-black-color-wall-260nw-1605128917.webp);
+  background-image: url(images/old-brick-black-color-wall-260nw-1605128917.webp);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
   body {
-    background-image: url(old-brick-black-color-wall-260nw-1605128917.webp);
+    background-image: url(images/old-brick-black-color-wall-260nw-1605128917.webp);
   }
 }
 /* .paragraph {
@@ -405,7 +531,7 @@ body {
 .content {
   padding: 10px 20px;
   background-color: black;
-  background-image: url(milky-way-2695569__480.jpg);
+  background-image: url(images/milky-way-2695569__480.jpg);
   position: relative;
   border-radius: 6px;
 }
