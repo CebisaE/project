@@ -129,9 +129,9 @@ fieldset {
     margin-top: 40px;
 
 }
-/* img{ */
-    /* border-radius: 50px; */
-/* } */
+img{
+    border-radius: 50px;
+}
 h1{
     color:yellow
   
@@ -383,7 +383,7 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid black;
+  /* border: medium solid black; */
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent black;
 }
@@ -403,8 +403,9 @@ body {
   left: -16px;
 }
 .content {
-  padding: 20px 30px;
+  padding: 10px 20px;
   background-color: black;
+  background-image: url(milky-way-2695569__480.jpg);
   position: relative;
   border-radius: 6px;
 }
