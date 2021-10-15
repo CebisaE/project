@@ -190,7 +190,8 @@ body {
   text-align: center;
 }
 .img {
-  float: center;
+  margin:0px;
+  padding: 0px;
 }
 .typewriter h1,h2 {
   color:yellow;
@@ -221,15 +222,15 @@ body {
   min-height: 100vh;
   background-color: black;
   color:yellow;
-}
 
+}
 .muzieknootjes {
   display: block;
   margin: auto;
   position: relative;
   width: 50%;
   min-width: 300px;
-  height: 200px;
+  /* height: 150px; */
   border: 0px solid #000;
 }
 
@@ -241,53 +242,63 @@ body {
 .noot-6,
 .noot-7 {
   position: absolute;
+  /* display: flex; */
+  /* justify-content: center ; */
   animation: notes 2s infinite linear;
-  font-size: 35px;
+  font-size: 100px;
   opacity: 0;
 }
 
 .noot-1 {
-  top: 60px;
-  left: 0;
+  top: 500px;
+  /* bottom: -10px; */
+  left:0 ;
+  /* right:100px; */
   animation-delay: 0.5s;
 }
 
 .noot-2 {
-  top: 30px;
-  bottom: 30px;
-  left: 30%;
+  top: 550px;
+  /* bottom: -20px; */
+  left: 0;
+  /* right: 150px; */
   animation-delay: 1s;
 }
 
 .noot-3 {
-  top: 90px;
-  bottom: 90px;
-  left: 60%;
+  top: 400px;
+  /* bottom: -30px; */
+  left: 0;
+  /* right: 200px; */
   animation-delay: 1.5s;
 }
 
 .noot-4 {
-  top: 40px;
-  bottom:40px;
-  left: 90%;
+  top:350px;
+  /* bottom:-40px; */
+  left: 0;
+  /* right: 250px; */
   animation-delay: 2s;
 }
 .noot-5 {
-  top: 50px;
-  bottom: 50px;
-  left: 60%;
+  top: 500px;
+  /* bottom: -50px; */
+  left: 0;
+  /* right: 300px; */
   animation-delay:2.5s
 }
 .noot-6 {
-  top: 50px;
-  bottom: 50px;
-  left: 60%;
+  top: 0px;
+  /* bottom: -60px; */
+  left: 0;
+  /* right: 350px; */
   animation-delay:3s
 }
 .noot-7 {
-  top: 50px;
-  bottom: 50px;
-  left: 60%;
+  top:300px;
+  /* bottom: -70px; */
+  left: 0;
+  /* right: 400px; */
   animation-delay:3.5s
 }
 
